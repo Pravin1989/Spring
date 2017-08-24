@@ -40,6 +40,7 @@ public class CustomerController {
 			@ModelAttribute("customer") Customer customer) {
 		ModelAndView modelAndView = new ModelAndView("customerDetails");
 		customerService.saveUser(customer);
+		System.out.println("This is save customer");
 		modelAndView.addObject("customers", customerService.listAllCustomers());
 		return modelAndView;	
 	}
