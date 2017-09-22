@@ -77,11 +77,11 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		return dataSource;
 	}
 	
-	@Bean
+	/*@Bean
 	public HttpSessionEventPublisher httpSessionEventPublisher() {
 		logger.info("HttpSessionEventPublisher is initialized");
 	    return new HttpSessionEventPublisher();
-	}
+	}*/
 
 	/*
 	 * @Bean public TomcatEmbeddedServletContainerFactory tomcatFactory() {
