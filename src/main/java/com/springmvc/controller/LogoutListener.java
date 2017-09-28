@@ -10,10 +10,11 @@ import org.springframework.security.core.session.SessionDestroyedEvent;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 @Component
-public class LogoutListener implements	ApplicationListener<SessionDestroyedEvent> {
+public class LogoutListener// implements	ApplicationListener<SessionDestroyedEvent>
+{
 	private static Logger logger = LoggerFactory.getLogger(SecurityConfig.class);
-	@Override
-	public void onApplicationEvent(SessionDestroyedEvent event) {
+//	/@Override
+	/*public void onApplicationEvent(SessionDestroyedEvent event) {
 		List<SecurityContext> lstSecurityContext = event.getSecurityContexts();
 		UserDetails ud;
 		logger.info("LogoutListener is initialized");
@@ -22,5 +23,5 @@ public class LogoutListener implements	ApplicationListener<SessionDestroyedEvent
 			ud = (UserDetails) securityContext.getAuthentication().getPrincipal();
 			System.out.println(ud.isEnabled());
 		}
-	}
+	}*/
 }

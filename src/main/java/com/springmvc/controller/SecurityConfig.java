@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
 		http.httpBasic().and().authorizeRequests().antMatchers("/")
 				.hasRole("ADMIN").anyRequest().authenticated();
 		 http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED);		 
-		 http.sessionManagement().maximumSessions(1).expiredUrl("/expiredSession").maxSessionsPreventsLogin(true).sessionRegistry(sessionRegistry());		 
+		 http.sessionManagement().maximumSessions(4).expiredUrl("/expiredSession").maxSessionsPreventsLogin(true).sessionRegistry(sessionRegistry());		 
 		 http.sessionManagement().invalidSessionUrl("/invalidSession");
 		 http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/out"));
 		 /*http.csrf().disable()
