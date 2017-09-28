@@ -4,7 +4,7 @@
 <head>
 </head>
 <body>	
-	<form:form method="POST" action="/saveCustomerData" modelAttribute="customer">
+	<form:form method="POST" action="/SpringBootPOC/saveCustomerData" modelAttribute="customer">
 	<h1>Wel Come to Customer Registration Page</h1>
 	<div>
 	<form:label path="name">Name :</form:label>

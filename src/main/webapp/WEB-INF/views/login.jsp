@@ -12,7 +12,7 @@
 <script src="<c:url value="/assets/css/jquery.min.js"/>"></script>
 </head>
 <body>	
-	<form:form method="POST" action="/login" modelAttribute="loginRequest">	
+	<form:form method="POST" action="/SpringBootPOC/login" modelAttribute="loginRequest">	
 		<div class="loginContainer">
 		<h3>Wel Come to Login</h3>
 			<div class="form-group loginFields">
@@ -24,7 +24,7 @@
 				<form:input class="form-control" path="password" />
 			</div>			
 			<div class="btn btn-default form-group loginFields">
-				<input type="submit" value="Save">
+				<input type="submit" value="Sign In">
 			</div>
 		</div>
 	</form:form>

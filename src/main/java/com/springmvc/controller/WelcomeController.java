@@ -28,11 +28,7 @@ public class WelcomeController {
 	}
 	
 	@RequestMapping(value="/login", method = RequestMethod.POST)
-	public String login(Model model,@ModelAttribute("loginRequest") LoginRequest loginRequest,HttpServletRequest request, HttpServletResponse response) {
-		HttpSession session = request.getSession(false);
-		if (request.isRequestedSessionIdValid() && session != null) {
-			session.invalidate();
-			}		
+	public String login(Model model,@ModelAttribute("loginRequest") LoginRequest loginRequest) {
 		logger.info("User is logged  in");
 		return "welcome";
 	}
