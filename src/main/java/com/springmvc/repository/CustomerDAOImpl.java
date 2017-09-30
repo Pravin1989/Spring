@@ -35,7 +35,7 @@ public class CustomerDAOImpl implements CustomerDAO {
 			customer.setName((String) row.get("name"));
 			customer.setEmail((String) row.get("email"));
 			customer.setAddress((String) row.get("address"));
-			customer.setSalary((Float) row.get("salary"));
+			customer.setSalary((Double) row.get("salary"));
 			customers.add(customer);
 		}		
 		return customers;

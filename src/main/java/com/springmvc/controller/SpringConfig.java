@@ -24,9 +24,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
-@ComponentScan(basePackages = "com.springmvc.models")
-@ComponentScan(basePackages = "com.springmvc.services")
-@ComponentScan(basePackages = "com.springmvc.repository")
+@ComponentScan({"com.springmvc.models","com.springmvc.repository","com.springmvc.services"})
 @EnableWebMvc
 public class SpringConfig extends WebMvcConfigurerAdapter {
 	private static Logger logger = LoggerFactory.getLogger(SpringConfig.class);
@@ -69,7 +67,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 		PoolProperties pool = new PoolProperties();
 		pool.setUrl("jdbc:postgresql://localhost:5432/springmvc");
 		pool.setUsername("postgres");
-		pool.setPassword("root");
+		pool.setPassword("pravin123");
 		pool.setMaxActive(10);
 		pool.setMaxAge(1000000);
 		DataSource dataSource = new DataSource();

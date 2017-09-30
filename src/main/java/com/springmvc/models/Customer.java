@@ -3,7 +3,7 @@ package com.springmvc.models;
 public class Customer {
 	private String name;
 	private String address;
-	private float salary;
+	private double salary;
 	private String email;
 	private int customer_id;
 	
@@ -31,11 +31,11 @@ public class Customer {
 		this.address = address;
 	}
 
-	public float getSalary() {
+	public double getSalary() {
 		return salary;
 	}
 
-	public void setSalary(float salary) {
+	public void setSalary(double salary) {
 		this.salary = salary;
 	}
 
