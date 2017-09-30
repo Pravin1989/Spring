@@ -9,8 +9,9 @@
 </head>
 <body>	
 <h3>Wel Come to Home Page</h3>
-	<a class="btn btn-default" href="/createCustomer">Create Customer</a><br>
-	<a class="btn btn-default" href="/listCustomers">List the Customer Details</a>
+	<a class="btn btn-default" href="/SpringBootPOC/createCustomer">Create Customer</a><br>
+	<a class="btn btn-default" href="/SpringBootPOC/listCustomers">List the Customer Details</a>
+	<a class="btn btn-default" href="/SpringBootPOC/logout">Logout</a>
 	 <button class="btn btn-default" type="button">
             <span class="glyphicon glyphicon-search">Get It</span>
           </button>

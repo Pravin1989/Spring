@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="<c:url value="/assets/css/bootstrap.min.css"/>" media="all" />
 </head>
 <body>	
-	<form:form method="POST" action="/saveCustomerData" modelAttribute="customer">
+	<form:form method="POST" action="/SpringBootPOC/saveCustomerData" modelAttribute="customer">
 	<h1>Wel Come to Customer Registration Page</h1>
 	<div class="form-group">
 	<form:label path="name">Name :</form:label>
